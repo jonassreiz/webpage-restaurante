@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+/* Estilos para o nav */
+nav {
+    width: 43%;
+}
+
+/* Estilos para o menu */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+/* Estilos para os itens do menu */
+.menu li {
+    margin: 0 15px;
+}
+
+/* Estilos para os links do menu */
+.menu a {
+    color: #a6a6a6;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+/* Estilos para os links ao passar o mouse */
+.menu a:hover {
+    background-color: #5555557a;
+    border-radius: 2px;
+}
+.line{
+    background-color: #e7ddcf4d;
+    width: 600px;
+    height: 1px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.title{
+    position: fixed;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+    margin-left: 25px ;
+    margin-top: 200px;
+}
+.title h3{
+    color: #dbcab6cc;
+    font-size: 25px;
+    font-weight: 900;
+}
+.title h1{
+    color: #DBCAB6;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1;
+}
+.list-services{
+    position: absolute;
+    margin-left: 740px;
+    padding-top: 50px;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+}
+img{
+    width: 78px;
+    height: 78px;
+}
+.varejo{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+.varejo p{
+    color: #DBCAB699;
+    width: 300px;
+    font-size: 15px;
+}
+.varejo h1{
+    color: #DBCAB6;
+    font-size: 31px;
+    font-weight: 900;
+}
+.title-varejo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 300px;
+    margin-left: 130px;
+}
+.title-alimento{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 300px;
+    margin-left: 130px;
+}
+.title-comida{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 300px;
+    margin-left: 130px;
+}
+.title-educaçao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 300px;
+    margin-left: 130px;
+}
+.title-medico{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 300px;
+    margin-left: 130px;
+}
+.list-services a{
+    margin-top: 50px;
+    text-decoration: none;
+    color:#DD6013;
+}
