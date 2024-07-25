@@ -1,1 +1,1 @@
-Manutenção para responsivo
+Manutenção para responsivo movel
