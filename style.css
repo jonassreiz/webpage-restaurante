@@ -41,22 +41,17 @@ nav {
 
 /* Estilos para os links ao passar o mouse */
 .menu a:hover {
-    background-color: #5555557a;
+    background-color: #000000;
+    color: #DD6013;
     border-radius: 2px;
-}
-.line{
-    background-color: #e7ddcf4d;
-    width: 600px;
-    height: 1px;
-    display: flex;
-    margin-bottom: 20px;
+    transition: all 0.5s;
 }
 .container{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    height: 100vw;
 }
 .title{
     position: fixed;
@@ -76,76 +71,40 @@ nav {
 }
 .title h1{
     color: #DBCAB6;
-    font-size: 80px;
+    font-size: 4rem;
     font-weight: 900;
     line-height: 1;
 }
 .list-services{
-    position: absolute;
-    margin-left: 740px;
-    padding-top: 50px;
-    width: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Inter;
+    position: absolute;
+    width: 100vh;
+    margin-left: 740px;
+    padding-top: 50px;
+    font-family: "Inter";
 }
 img{
     width: 78px;
     height: 78px;
 }
-.varejo{
+.services{
     display: flex;
     flex-direction: row;
-    gap: 50px;
     align-items: center;
+    gap: 45px;
 }
-.varejo p{
-    color: #DBCAB699;
+.services p{
     width: 300px;
+    color: #DBCAB699;
     font-size: 15px;
 }
-.varejo h1{
+.services h1{
     color: #DBCAB6;
     font-size: 31px;
     font-weight: 900;
 }
-.title-varejo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    width: 250px;
-    height: 300px;
-    margin-left: 130px;
-}
-.title-alimento{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    width: 250px;
-    height: 300px;
-    margin-left: 130px;
-}
-.title-comida{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    width: 250px;
-    height: 300px;
-    margin-left: 130px;
-}
-.title-educaçao{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-    width: 250px;
-    height: 300px;
-    margin-left: 130px;
-}
-.title-medico{
+.info-services{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -155,7 +114,126 @@ img{
     margin-left: 130px;
 }
 .list-services a{
+    display: flex;
+    align-items: center;
     margin-top: 50px;
     text-decoration: none;
     color:#DD6013;
 }
+svg{
+    padding-left: 10px;
+    stroke-width: 2px;
+}
+.line{
+    display: flex;
+    width: 600px;
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: #e7ddcf4d;
+}
+/* Telas menores */
+@media (max-width: 480px) {
+    nav {
+        width: 100%;
+        font-size: 13px;
+    }
+    .menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        position: static;
+    }
+    .menu li {
+        margin: 5px 0;
+    }
+    .menu a {
+        color: #a6a6a6;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .title{
+        position: static;
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        margin: 0;
+        padding: 32px 13px;
+    }
+    .title h3{
+        color: #dbcab6cc;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    .title h1{
+        padding: 5px 0;
+        color: #DBCAB6;
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 1;
+    }
+    .list-services{
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        margin: 90px 0;
+        padding: 0;
+        font-family: "Inter";
+    }
+    img{
+        width: 68px;
+        height: 68px;
+    }
+    .services{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 5px 0 20px;
+        gap: 80px;
+    }
+    .services p{
+        width: 270px;
+        color: #DBCAB699;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .services h1{
+        color: #DBCAB6;
+        width: 300px;
+        font-size: 31px;
+        font-weight: 900;
+    }
+    .info-services{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+        width: 99%;
+        height: auto;
+        margin: 4px;
+    }
+    .list-services a{
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        text-decoration: none;
+        color:#DD6013;
+    }
+    
+    .line{
+        width: 100%;
+        height: 2px;
+        margin: 20px 0;
+        background-color: #e7ddcf4d;
+    }
+  }
