@@ -1,2 +1,1 @@
-![Print do site](img/print-1.png)
-![Print do site](img/print-2.png)
+<img src="img/print-1.png" alt="Descrição da Imagem" style="width: 40%;">  <img src="img/print-2.png" alt="Descrição da Imagem" style="width: 40%;">
